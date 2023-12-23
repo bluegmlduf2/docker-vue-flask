@@ -28,6 +28,6 @@ services:
     volumes:
       - ./frontend:/frontend
     ports:
-      - "5173:5173" # 5173포트를 사용하자 6000번 포트사용시 안전하지않다고 경고뜸
+      - "5555:5173" # 5173포트를 사용하자 6000번 포트사용시 안전하지않다고 경고뜸
     environment:
       API_URL: http://host.docker.internal:5005
